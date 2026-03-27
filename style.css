@@ -1,0 +1,93 @@
+:root {
+  --bg: #f7f8fc;
+  --card: #ffffff;
+  --primary: #5a43ff;
+  --text: #23263a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  width: min(1080px, 92%);
+  margin: 0 auto;
+}
+
+.hero {
+  background: linear-gradient(120deg, #5a43ff, #7d6cff);
+  color: #fff;
+  text-align: center;
+  padding: 56px 0;
+}
+
+.hero h1 {
+  margin: 0 0 8px;
+}
+
+.btn {
+  border: none;
+  background: var(--primary);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+main {
+  padding: 28px 0 48px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.price {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.cart {
+  margin-top: 32px;
+  background: var(--card);
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+#cartItems {
+  padding-left: 18px;
+}
+
+.total {
+  font-size: 1.1rem;
+}
+
+footer {
+  background: #15182b;
+  color: #ced2f3;
+  padding: 12px 0;
+  text-align: center;
+}
